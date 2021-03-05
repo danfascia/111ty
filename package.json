@@ -1,0 +1,13 @@
+{
+  "name": "11ty-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "eleventy-njk-unpkg-inliner": "^1.0.2",
+    "eleventy-plugin-seo": "^0.5.1",
+    "eleventy-plugin-tailwindcss": "^0.3.0"
+  }
+}
