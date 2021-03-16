@@ -2,6 +2,7 @@ const pluginTailwindCSS = require("eleventy-plugin-tailwindcss")
 const navigation = require("@11ty/eleventy-navigation")
 const seo = require("eleventy-plugin-seo")
 const unpkgInliner = require("eleventy-njk-unpkg-inliner")
+const site = require("./src/_data/site.js")
 
 module.exports = function(eleventyConfig) {
 
@@ -14,12 +15,12 @@ module.exports = function(eleventyConfig) {
     })
 
     eleventyConfig.addPlugin(seo, {
-        title: "11ty-1 starter",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        url: "https://foo.com",
-        author: "Jane Doe",
-        twitter: "danfascia",
-        image: "foo.jpg"
+        title: site.title,
+        description: site.description,
+        url: site.url,
+        author: site.author.name,
+        twitter: site.author.twitter,
+        image: site.image
       })
     
     // SHORTCODES
