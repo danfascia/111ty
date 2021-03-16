@@ -1,4 +1,4 @@
-![111ty Logo](/assets/img/logo.png)
+![111ty Logo](/111ty.png)
 
 # 111ty
 
