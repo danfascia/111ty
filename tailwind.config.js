@@ -1,8 +1,20 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: [],
+  purge: {
+    content: ['./src/**/*.njk', './src/**/*.svg'],
+    layers: ['components'],
+    options: {
+      safelist: ['hidden']
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      },
+    },
   },
   variants: {
     extend: {},
