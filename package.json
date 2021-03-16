@@ -1,13 +1,23 @@
 {
-  "name": "11ty-1",
+  "name": "111ty",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "npm run serve",
+    "serve": "npm run clean && cross-env NODE_ENV=development eleventy --serve",
+    "watch": "npm run clean && cross-env NODE_ENV=development eleventy --watch",
+    "build": "npm run clean && cross-env NODE_ENV=production eleventy",
+    "debug": "DEBUG=Eleventy* npm run build"
+  },
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
     "eleventy-njk-unpkg-inliner": "^1.0.2",
     "eleventy-plugin-seo": "^0.5.1",
-    "eleventy-plugin-tailwindcss": "^0.3.0"
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "rimraf": "^3.0.2",
+    "cross-env": "^7.0.3"
   }
 }
