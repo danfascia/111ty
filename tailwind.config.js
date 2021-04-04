@@ -2,7 +2,11 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    content: ['./src/**/*.njk', './src/**/*.svg'],
+    content: [
+      './src/**/*.njk', 
+      './src/**/*.html', 
+      './src/**/*.svg',
+    ],
     layers: ['components'],
     options: {
       safelist: ['hidden']
