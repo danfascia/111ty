@@ -13,6 +13,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginTailwindCSS, {
         src: "src/css/style.css"
     })
+    
+    eleventyConfig.addPlugin(navigation);
 
     eleventyConfig.addPlugin(seo, {
         title: site.title,
